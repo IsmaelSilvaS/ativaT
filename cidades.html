@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ativa Turismo - Sobre</title>
+        <link rel="stylesheet" href="cidades.css">
+        <link rel="icon" href="./assets/ativaTurismoLogoConvBusNewJustRed.svg">
+        <script src="https://kit.fontawesome.com/207fb0acb1.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+        <nav>
+          <img class="logo" src="./assets/ativaTurismoLogoConvBusNewJustRed.svg" alt="logo ativa turismo">
+          <div class="mobile-menu">
+            <i class="fa-solid fa-bars fa-3x"></i>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html"><i class="fa-solid fa-handshake"></i> Parceiros</a></li>
+            <li><a href="sobre.html"><i class="fa-solid fa-user-tie"></i> Quem somos</a></li>
+            <li><a href="localizacao.html"><i class="fa-solid fa-map-location-dot"></i> Localização</a></li>
+            <li><a href="cidades.html"><i class="fa-solid fa-building-circle-check"></i> Cidades</a></li>
+            <li><a href="contato.html"><i class="fa-solid fa-phone"></i> Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+    <section class="nav-cidades">
+        <span>Tocantins</span>
+        <span>União</span>
+        <span>Catedral</span>
+        <span>Reunidas</span>
+    </section>
+    <div class="text"><h1>Não utilize acentos nem 'ç'.</h1></div>
+    <main class="cidades-busca">
+        <section class="busca busca-tocantins">
+            <div class="content to">
+                <h2>Tocantins</h2>
+                <input id="pesquisaTo" type="search" placeholder="Tocantins">
+                <ul id="listaTo"></ul>
+            </div>
+        </section>
+        <section class="busca busca-uniao">
+            <div class="content un">
+                <h2>União</h2>
+                <input id="pesquisaUn" type="search" placeholder="União">
+                <ul id="listaUn"></ul>
+            </div>
+        </section>
+        <section class="busca busca-Catedral">
+            <div class="content ca">
+                <h2>Catedral</h2>
+                <input id="pesquisaCa" type="search" placeholder="Catedral / Braex">
+                <ul id="listaCa"></ul>
+            </div>
+        </section>
+        <section class="busca busca-reunidas">
+            <div class="content re">
+                <h2>Reunidas</h2>
+                <input id="pesquisaRe" type="search" placeholder="Reunidas">
+                <ul id="listaRe"></ul>
+            </div>
+        </section>
+    </main>
+    <script src="nav-mobile.js"></script>
+    <script src="tocantins.js"></script>
+    <script src="uniao.js"></script>
+    <script src="catedral.js"></script>
+    <script src="reunidas.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.mobile-menu{
+    color: #e61919;
+    cursor: pointer;
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    color: #e61919;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    letter-spacing: 1px;
+    margin-right: 30px;
+}
+
+header a:hover{
+    opacity: 1.0;
+}
+
+
+/*----------PARCEIROS----------*/
+
+.parceiros{
+    width: 100%;
+    height: calc(100vh - 96.89px);
+    text-align: center;
+    background-color: #dbd8da;
+    background-image: url(./assets/ativaTurismoLogoConvBusNewOpacity.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.parceiros-text{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.parceiros-sec{
+    height: calc(100% - 30vh);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.parceiros-bus{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.parceiros-bus-descr{
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+
+.parceiros-bus-descr h3{
+    margin-top: 10px;
+}
+
+.tocantinsh3{
+    color: green;
+}
+
+.uniaoh3{
+    color: blue;
+}
+
+.braexh3{
+    color: orangered;
+}
+
+.reunidash3{
+    color: mediumpurple;
+}
+
+.tocantins{
+    background-image: url(./assets/onibusTocantins2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#tocantins{
+    font-size: 16px;
+    display: inline-block;
+    color: green;
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#tocantins:hover{
+    color: white;
+    background-color:  green;
+}
+
+.uniao{
+    background-image: url(./assets/onibusUniao.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#uniao{
+    font-size: 16px;
+    display: inline-block;
+    color: rgba(6, 52, 255, 0.993);
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#uniao:hover{
+    color: white;
+    background-color: rgba(6, 52, 255, 0.993);
+}
+
+.braex{
+    background-image: url(./assets/onibusCatedral1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#braex{
+    font-size: 16px;
+    display: inline-block;
+    color: orangered;
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#braex:hover{
+    color: white;
+    background-color: orangered;
+}
+
+.reunidas{
+    background-image: url(./assets/caminhaoReunidas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#reunidas{
+    font-size: 16px;
+    display: inline-block;
+    color: mediumpurple;
+    background-color: black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#reunidas:hover{
+    color: white;
+    background-color: mediumpurple;
+}
+
+@media (max-width: 850px) {
+    body{
+        height: 100%;
+    }
+    
+    .parceiros-bus{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .nav-list {
+      display: none;
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 60vw;
+      height: 95vh;
+      background: black;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    display: flex;
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 450px){
+    .parceiros{
+        height: 100%;
+        background-repeat: repeat;
+    }
+}
